@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+
+<link rel="icon" type="image/svg+xml" href="content/favicon.png">
+<link rel="apple-touch-icon" href="https://feeldreams.github.io/main-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js">
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<head>
+  <title>I Love U Jihan Aribahanun</title>
+  <meta name="description" content="HTML Feeldream Repl Co">
+</head>
+
+<body>
+
+  <div class="overlay">
+    <div class="loading-message">Hai Jihan Aribahanun<br>Tunggu dulu ya..</div>
+  </div>
+
+  <audio src="content/bersamamu.mp3" id="linkmp3" class="sembunyi" loop></audio>
+
+  <section class="first">
+    <div class="wp"><img id="imgsatu" src="content/img1.jpg" /></div>
+    <img id="first_stiker" class="stiker fade-in" src="content/ji01.gif" />
+    <h1 class="title">Hai Jihan Cantiknya Mas 🤗</h1>
+    <p class="flip">Mas Bim boleh jujur ga nih ? 😅</p>
+    <p class="slide-up"><i>Scroll terus ke bawah ya cantik :)</i></p>
+  </section>
+
+  <section>
+    <div class="wp"><img id="imgdua" src="content/img2.jpg" /></div>
+    <img class="stiker fade-in" src="content/ji02.gif" />
+    <h2 class="title"><i>Sebenernya..</i>🙈</h2>
+    <p class="slide-right">Mas bim suka sama <b class="lingkar">Jihan 😅😁</b></p>
+    <p class="slide-right">malu mas bim mau bilangnya <b class="lingkar"></b> :(</p>
+  </section>
+
+  <section>
+    <div class="wp"><img id="imgtiga" src="content/img3.jpg" /></div>
+    <p id="teksnimasi">Kalo Jihan tanya kenapa aku mas Bim bisa secepat ini suka sama Jihan, itu karena mas Bim punya
+      rasa nyaman tersendiri yang ga pernah mas Bim temui di mana pun.<br><br><b><i>Jihan Tau?</i></b><br>Gaada yang
+      bisa bikin mas Bim senyaman ini selain Jihan<br><br>Dan karena kenal sama Jihan, mas Bim merasakan apa itu
+      kenyamanan, apa itu kebahagiaan, dan kamu sekaligus rumah bagi mas Bim :)</p>
+  </section>
+
+  <section>
+    <div class="wp"><img id="imgempat" src="content/img4.jpg"></div>
+    <img class="stiker fade-in" src="content/ji01.gif" />
+    <h2 class="title"><i>Intinya gini ya Jihan,</i></h2>
+    <p class="slide-right"><b>Jihan Mau engga<br>Jadi Pacar nya mas Bim ? Sekaligus jadi pendampingnya mas Bim
+        🥰😍💖</b></p>
+    <div id="Tombol">
+      <a id="By" onClick="fungsimau()">Mau 🫣🤭</a>
+      <a id="Bn" onClick="fungsigamau()">Gamau 😔🙁</a>
+    </div>
+  </section>
+
+  <section id="iniakhir">
+    <div class="wp" id="wpakhir"><img src="content/img5.jpg" /></div>
+    <img id="stikerakhir" class="stiker fade-in" src="https://feeldreams.github.io/g5.gif" />
+    <img id="stikerakhir2" style="display:none" src="https://feeldreams.github.io/emawh.gif" />
+    <h1 id="judulakhir"></h1>
+    <p id="kalimatakhir"></p>
+    <p id="palingakhir"></p>
+    <div id="TombolWA">
+      <a onClick="menuju()">Balas ✨</a>
+    </div>
+  </section>
+
+  <div id="initom" class="menu">
+    <a class='tombol' onclick="tes()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    function fungsimau() {
+      fungsi = 0; tes();
+      teksjudulakhir = "Yeayyy! I Love U Cantiknya mas Bim 😘";
+      tekskalimatakhir = "Maacih Jihan udah mau nerima mas Bim<br>Jihan mau kok jadi pacarnya mas Bim, hihi 🤭";
+    }
+    function fungsigamau() {
+      fungsi = 0; tes();
+      teksjudulakhir = "Yahhh 🙁😔";
+      tekskalimatakhir = "Yaudah kalo kamu gamau,<br>biar aku aja yang jadi<br>pacar kamu, hehe";
+    }
+
+    teksjudulakhir2 = "I Love You Cantikku 🥰✨";
+    tekspalingakhir = "Jangan lupa balas pesan<br>ke WhatsApp mas Bim ya! ✨";
+
+    pesanwhatsapp = "Jihan mau kok jadi pacar mas Bim ><";
+
+    const body = document.querySelector("body"); initom.style = "opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() { const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90) + "vw"; heart.style.animationDuration = (Math.random() * 3) + 2 + "s"; body.appendChild(heart); } setInterval(function name(params) { var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) { heartArr[0].remove() } }, 100);
+  </script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
